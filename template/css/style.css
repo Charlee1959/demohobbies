@@ -1,0 +1,31 @@
+
+/* TEMPLATE > STRUCTURE */
+header, main, footer {
+  position: relative;
+  width: 100%;
+  min-height: 200px;
+  color: #ffffff;
+}
+p {
+  font-size: 2rem;
+  text-align: center;
+  padding: 40px;
+}
+
+/* TEMPLATE > HEADER */
+header {
+  background-color: #700909;
+}
+.active {
+  color: red;
+}
+
+/* TEMPLATE > MAIN */
+main {
+  background-color: #12680c;
+}
+
+/* TEMPLATE > FOOTER */
+footer {
+  background-color: #2a0a6c;
+}

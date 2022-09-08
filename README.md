@@ -1,2 +1,2 @@
-# demohobbies
-demo van hobbies volgens een template
+# PHP-template-system
+Template system with PHP includes

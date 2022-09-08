@@ -1,0 +1,18 @@
+# Ignore folders
+.DS_Store
+.history/
+.sass-cache/
+backup/
+download/
+node_modules/
+
+# Ignore folder .vscode, except specific files
+.vscode/*
+!.vscode/extensions.json
+!.vscode/launch.json
+!.vscode/settings.json
+!.vscode/tasks.json
+*.code-workspace
+
+# Ignore specific files
+prepros.config

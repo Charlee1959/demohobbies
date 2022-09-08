@@ -1,0 +1,54 @@
+# Enables mod_rewrite
+RewriteEngine on
+
+# Sets timezone
+SetEnv TZ Europe/Amsterdam
+
+# Apply UTF-8 encoding only for specific file types
+<filesMatch "\.(htm|html|css|js)$">
+   AddDefaultCharset UTF-8
+   DefaultLanguage en-US
+</filesMatch>
+
+# Enables PHP within htm files
+# For XAMPP's localhost, enable this line, disable the others:
+AddType application/x-httpd-php .php .htm .html
+# For online (for instance DreamHost provider), enable these lines, disable the previous:
+# AddHandler php-cgi .htm
+# AddHandler php5-cgi .htm
+
+# Permission to view directory listing NOT allowed
+Options All -Indexes
+
+# Permission to view/run specific files NOT allowed
+<FilesMatch "\.(htaccess|htpasswd|ini|inc|phps|fla|psd|log|sh)$">
+  Order Allow,Deny
+  Deny from all
+</FilesMatch>
+
+# Custom redirects
+Redirect 301 /wp-config.php http://www.fbi.gov/
+
+# Deny access to evil robots, site rippers, offline browsers and other nasty scum
+RewriteBase /
+RewriteCond %{HTTP_USER_AGENT} ^Anarchie [OR]
+RewriteCond %{HTTP_USER_AGENT} ^ASPSeek [OR]
+RewriteCond %{HTTP_USER_AGENT} ^attach [OR]
+RewriteCond %{HTTP_USER_AGENT} ^autoemailspider [OR]
+RewriteCond %{HTTP_USER_AGENT} ^Xaldon\ WebSpider [OR]
+RewriteCond %{HTTP_USER_AGENT} ^Xenu [OR]
+RewriteCond %{HTTP_USER_AGENT} ^Zeus.*Webster [OR]
+RewriteCond %{HTTP_USER_AGENT} ^Zeus
+RewriteRule ^.* - [F,L]
+
+# Force Internet Explorer to render pages in the highest available mode in the
+# various cases when it may not. See https://hsivonen.fi/doctype/#ie8
+<IfModule mod_headers.c>
+    Header set X-UA-Compatible "IE=edge"
+    # `mod_headers` cannot match based on the content-type, however, this header
+    # should be send only for HTML documents and not for the other resources
+    <FilesMatch "\.(appcache|atom|crx|css|cur|eot|f4[abpv]|flv|geojson|gif|htc|ico|jpe?g|js|json(ld)?|m4[av]|manifest|map|mp4|oex|og[agv]|opus|otf|pdf|png|rdf|rss|safariextz|svgz?|swf|topojson|tt[cf]|txt|vcf|vtt|webapp|web[mp]|woff2?|xml|xpi)$">
+        Header unset X-UA-Compatible
+    </FilesMatch>
+</IfModule>
+
