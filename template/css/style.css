@@ -7,14 +7,14 @@ header, main, footer {
   color: #ffffff;
 }
 p {
-  font-size: 2rem;
+  font-size: small;
   text-align: center;
   padding: 40px;
 }
 
 /* TEMPLATE > HEADER */
 header {
-  background-color: #700909;
+  background-color: #88811e;
 }
 .active {
   color: red;
@@ -22,10 +22,10 @@ header {
 
 /* TEMPLATE > MAIN */
 main {
-  background-color: #12680c;
+  background-color: #3c8337;
 }
 
 /* TEMPLATE > FOOTER */
 footer {
-  background-color: #2a0a6c;
+  background-color: #271b3fb7;
 }

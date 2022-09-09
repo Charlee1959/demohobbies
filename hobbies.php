@@ -15,7 +15,7 @@
   <main>
     <!-- ADD MAIN CONTENT HERE -->
     <p>
-      Subpage 1
+      Hobbies
     </p>
   </main>
 
