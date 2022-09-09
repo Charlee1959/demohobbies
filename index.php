@@ -15,7 +15,7 @@
   <main>
     <!-- ADD MAIN CONTENT HERE -->
     <p>
-      Dit is een tryout van een overzicht van mijn hobby's. Je kunt er navigeren naar diverse hobby's. Bij elke hobby wordt er wat dieper in gegaan.
+      Dit is een tryout van een overzicht van mijn hobby's. Je kunt er navigeren naar diverse hobby's. Bij elke hobby wordt er wat dieper op in gegaan.
     </p>
   </main>
 

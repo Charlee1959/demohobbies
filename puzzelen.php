@@ -17,7 +17,7 @@
   <main>
     <!-- ADD MAIN CONTENT HERE -->
     <p>
-      Ik heb diverse hobby's, in deze site beperk ik me tot vier daarvan. Lezen, wandelen, puzzelen en genealogie.
+      Ik ben dol op puzzelen, sudoku's, doorlopers, cryptogrammen, etc
     </p>
   </main>
 
@@ -28,7 +28,7 @@
 <?php include 'template/php/includes/document-end.php';?>
 
 <script>
-  document.getElementById("menu-item1").className += " active";
+  document.getElementById("menu-item4").className += " active";
 </script>
 
 </body>

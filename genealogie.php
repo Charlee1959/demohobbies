@@ -17,7 +17,9 @@
   <main>
     <!-- ADD MAIN CONTENT HERE -->
     <p>
-      Ik heb diverse hobby's, in deze site beperk ik me tot vier daarvan. Lezen, wandelen, puzzelen en genealogie.
+      Ooit was ik begonnen met het uitzoeken van mijn stamboom, daarna had mijn vader het overgenomen en het verder uitgewerkt.
+      Later ontdekte ik een website van een verre achterneef van me, onze gemeenschappelijke voorvader is mijn overgrootvader.
+      Daarnaast ben ik ook geinteresseerd geraakt in genealogiën van diverse adelshuizen, in het begin die van Oranje-Nassau.
     </p>
   </main>
 
@@ -28,7 +30,7 @@
 <?php include 'template/php/includes/document-end.php';?>
 
 <script>
-  document.getElementById("menu-item1").className += " active";
+  document.getElementById("menu-item5").className += " active";
 </script>
 
 </body>

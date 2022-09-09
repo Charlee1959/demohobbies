@@ -17,7 +17,7 @@
   <main>
     <!-- ADD MAIN CONTENT HERE -->
     <p>
-      Ik heb diverse hobby's, in deze site beperk ik me tot vier daarvan. Lezen, wandelen, puzzelen en genealogie.
+      Ik heb verschillende categoriën boeken, science fiction, historische romans, fantasy, studieboeken, naslagwerken, etc
     </p>
   </main>
 
@@ -28,7 +28,7 @@
 <?php include 'template/php/includes/document-end.php';?>
 
 <script>
-  document.getElementById("menu-item1").className += " active";
+  document.getElementById("menu-item2").className += " active";
 </script>
 
 </body>

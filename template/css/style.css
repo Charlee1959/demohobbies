@@ -3,11 +3,11 @@
 header, main, footer {
   position: relative;
   width: 100%;
-  min-height: 200px;
+  min-height: 300px;
   color: #ffffff;
 }
 p {
-  font-size: small;
+  font-size: 2rem;
   text-align: center;
   padding: 40px;
 }
@@ -22,7 +22,10 @@ header {
 
 /* TEMPLATE > MAIN */
 main {
-  background-color: #3c8337;
+  background-color: #45818ba4;
+}
+main p {
+  font-size: 20px;
 }
 
 /* TEMPLATE > FOOTER */

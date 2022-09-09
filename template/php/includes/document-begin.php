@@ -4,4 +4,4 @@
 <meta name="robots" content="index, follow">
 
 <link rel="stylesheet" href="template/css/reset.css">
-<link rel="stylesheet" href="template/css/style.css">
+<link rel="stylesheet" href="template/css/style.css?id=<?php echo rand(10,20);?>">
