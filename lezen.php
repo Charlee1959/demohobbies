@@ -17,8 +17,15 @@
   <main>
     <!-- ADD MAIN CONTENT HERE -->
     <p>
-      Ik heb verschillende categoriën boeken, science fiction, historische romans, fantasy, studieboeken, naslagwerken, etc
+      Ik heb verschillende categoriën boeken:
     </p>
+    <div class="list-group list-group-horizontal">
+        <p><a href="#" class="list-group-item list-group-item-action">science fiction</a></p>
+        <p><a href="#" class="list-group-item list-group-item-action">historische romans</a></p>
+        <p><a href="#" class="list-group-item list-group-item-action">fantasy</a></p>
+        <p><a class="list-group-item list-group-item-action disabled">studieboeken</a></p>
+        <p><a href="#" class="list-group-item list-group-item-action">naslagwerken</a></p>
+      </div>
   </main>
 
   <footer>

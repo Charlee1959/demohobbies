@@ -24,9 +24,13 @@ header {
 main {
   background-color: #45818ba4;
 }
-main p {
+.list-group {
+  text-align: center;
+}
+/* main p {
   font-size: 20px;
 }
+*/
 
 /* TEMPLATE > FOOTER */
 footer {
